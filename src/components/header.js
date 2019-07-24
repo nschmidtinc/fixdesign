@@ -98,8 +98,8 @@ class Header extends React.Component {
   }
   render(){
   return(
-  <header className="masthead d-flex" style={{display:`${this.state.displayTime}`,backgroundColor:'black',height:'929px'}}>
-    <div className="container text-center my-auto" style={{width: '100%', marginBottom: '20%', display:`${this.state.displayTime}`, position:'absolute',top:'10%', left:'10%'}}>
+  <header className="masthead d-flex" style={{display:`${this.state.displayTime}`,backgroundColor:'black'}}>
+    <div className="container text-center my-auto" style={{width: '100%', marginBottom: '20%', display:`${this.state.displayTime}`}}>
     {/* <h1 style={{fontWeight: 50, fontSize: 25, color:'white', textAlign: 'left'}}>
     Entrez votre courriel, afin de recevoir vos photos.</h1> */}
     {/* <div height="20" style={{borderTop: '3px solid #66cc00', fontSize: '20px', lineHeight: '20px', marginTop: '1rem', marginBottom: '1rem'}}></div> */}
@@ -108,7 +108,7 @@ class Header extends React.Component {
 
 Enter your email address to get your photos.
 </h3> 
-        <div style={{display: 'flex', flexDirection: 'column'}}>
+        <div style={{display: 'flex', flexDirection: 'column', width: '100%'}}>
       {/* <input id='email' placeholder="Email" value={this.state.input} onChange={this.handleNameChange} style={{marginTop: '1rem', marginBottom: '1rem'}}></input> */}
     
       <KeyboardedInput
@@ -124,7 +124,7 @@ Enter your email address to get your photos.
 
         />
   
-      <button style={{fontSize: '23px', fontWeight: 100}}className="btn btn-primary btn-xl js-scroll-trigger" disabled={!this.state.isChecked && !this.state.goodEmail} onClick={this.handleEmail} href="#about">
+      <button style={{fontSize: '23px', fontWeight: 100, paddingTop: '10px'}}className="btn btn-primary btn-xl js-scroll-trigger" disabled={!this.state.isChecked && !this.state.goodEmail} onClick={this.handleEmail} href="#about">
         Send
       </button>
       <div className="overlay" />
@@ -141,11 +141,13 @@ Enter your email address to get your photos.
     padding: 'initial',
     border: 'initial'}}></input>
    </div>
-   <div style={{fontSize: '12px', marginLeft: '2px'}}><span style={{fontStyle: 'italic', paddingLeft:'20px'}}>«I authorize BMAD to contact me for future promotions.»</span></div>
+   <div className="checkbox"style={{fontSize: '12px', marginLeft: '2px'}}><span style={{fontStyle: 'italic', paddingLeft:'20px'}}>«I authorize BMAD to contact me for future promotions.»</span></div>
     </div>
       </div>
-      <a href="https://localhost:3000/"  style={{borderStyle: 'none', border: 0, display: 'flex', alignItems: 'center' }}>
-                                        <img src="Nomads02a_white.png" style={{paddingTop: '4vw', width: '50vw'}}></img>
+      <a href="https://localhost:3000/"  className="logos" style={{borderStyle: 'none', border: 0, display: 'flex', alignItems: 'center' }}>
+                                        <img src="https://publicimagesnomadsbmad.s3.ca-central-1.amazonaws.com/Logo+Blackhawks.png
+" style={{paddingTop: '4vw', width: '200px'}}></img>
+                                        <img src="https://publicimagesnomadsbmad.s3.ca-central-1.amazonaws.com/BLINK.png" style={{paddingTop: '4vw', width: '200px'}}></img>
                                         </a>
     </div>
     <div>

@@ -89,25 +89,6 @@ h6 {
 .fas {
   line-height: inherit; }
 
-.masthead {
-  min-height: 30rem;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: black; }
-  .masthead h1 {
-    font-size: 4rem;
-    margin: 0;
-    padding: 0; }
-  @media (min-width: 992px) {
-    .masthead {
-      height: 100vh; }
-      .masthead h1 {
-        font-size: 5.5rem; } }
-
 /* Side Menu */
 #sidebar-wrapper {
   position: fixed;
@@ -247,7 +228,7 @@ h6 {
       max-width: none;
       margin: 0; }
       .portfolio-item .caption {
-        -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+        -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
         -webkit-clip-path: inset(0px);
         clip-path: inset(0px); }
         .portfolio-item .caption .caption-content {
@@ -294,7 +275,8 @@ a {
 .btn-primary {
   background-color: red !important;
   border-color: red !important;
-  color: white !important; }
+  color: white !important;
+  margin-top: 2vw; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     border-color: red;
     color: white; }
@@ -323,3 +305,62 @@ a {
 .text-secondary {
   color: #6a2fa2 !important;
   letter-spacing: 2px !important; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black; }
+  body header {
+    background-color: black; }
+  body .container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 4vw;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 100vh; }
+    body .container h3 {
+      font-weight: 50;
+      margin-bottom: 5rem;
+      font-size: 25px;
+      color: white;
+      text-align: center;
+      margin: 0 auto; }
+    body .container input {
+      width: 75%;
+      margin: 0 auto; }
+    body .container .btn {
+      font-size: 23px;
+      font-weight: 100;
+      padding-top: 10px;
+      width: 75%;
+      margin: 0 auto;
+      margin-top: 2vw; }
+    body .container .logos {
+      border: 0px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      align-items: space-between; }
+      body .container .logos img {
+        width: 100px; }
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+  .checkbox span {
+    font-style: italic;
+    padding-left: 20px;
+    font-size: 20px; }
+
+.input {
+  padding: 10px; }

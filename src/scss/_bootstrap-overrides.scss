@@ -3,10 +3,13 @@ a {
 
 }
 
+
+
 .btn-primary {
   background-color: red !important;
   border-color: red !important;
   color: white !important; 
+  margin-top:2vw;
   &:hover,
   &:focus,
   &:active {
@@ -50,3 +53,74 @@ a {
   color: #6a2fa2 !important;
   letter-spacing: 2px !important;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  header {
+    background-color: black;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 4vw;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 100vh;
+    h3 {
+      font-weight: 50;
+      margin-bottom: 5rem;
+      font-size: 25px;
+      color: white;
+      text-align: center;
+      margin: 0 auto;
+    }
+    input {
+      width:75%;
+      margin:0 auto;
+    }
+    .btn {
+      font-size: 23px;
+      font-weight: 100;
+      padding-top: 10px;
+      width: 75%;
+      margin: 0 auto;
+      margin-top: 2vw;
+    }
+    .logos {
+      border: 0px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      align-items: space-between;
+      img {
+        width:100px;
+      }
+    }
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  span {
+    font-style: italic;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+}
+
+.input {
+  padding:10px;
+}
+
